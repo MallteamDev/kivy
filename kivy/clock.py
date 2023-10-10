@@ -561,7 +561,7 @@ except (OSError, ImportError, AttributeError):
     #   "undefined symbol: clock_gettime". CF #3797
     # OSError: if the libc cannot be read (like with buildbot: invalid ELF
     # header)
-
+    print("clock is time module")
     def _usleep(microseconds, obj=None):
         time.sleep(microseconds / 1000000.)
 
